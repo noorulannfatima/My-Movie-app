@@ -30,7 +30,7 @@ export const fetchMovies = async ({
   const data = await response.json();
   return data.results;
 };
-
+// for detail page
 export const fetchMovieDetails = async (
   movieId: string,
 ): Promise<MovieDetails> => {
