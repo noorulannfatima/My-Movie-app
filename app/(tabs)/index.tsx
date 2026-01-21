@@ -19,6 +19,7 @@ import MovieCard from "@/components/MovieCard";
 import SearchBar from "@/components/SearchBar";
 import TrendingCard from "@/components/TrendingCard";
 
+//
 const Index = () => {
   const router = useRouter();
 
@@ -38,10 +39,10 @@ const Index = () => {
     <View className="flex-1 bg-primary">
       <Image
         source={images.bg}
-        className="absolute w-full z-0"
+        className="absolute w-full z-0" // z-0 to show element on the top of it.
         resizeMode="cover"
       />
-
+      {/* ScrollView if content is more than screen height. */}
       <ScrollView
         className="flex-1 px-5"
         showsVerticalScrollIndicator={false}

@@ -1,3 +1,4 @@
+//
 export const TMDB_CONFIG = {
   BASE_URL: "https://api.themoviedb.org/3",
   API_KEY: process.env.EXPO_PUBLIC_MOVIE_API_KEY,
@@ -7,6 +8,7 @@ export const TMDB_CONFIG = {
   },
 };
 
+// fetch movies that match the user query
 export const fetchMovies = async ({
   query,
 }: {
